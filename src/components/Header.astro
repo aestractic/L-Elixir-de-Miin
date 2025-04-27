@@ -1,0 +1,46 @@
+---
+const navItems = [
+  { href: '#philosophy', label: 'Philosophy' },
+  { href: '#treatments', label: 'Treatments' },
+  { href: '#schedule', label: 'Schedule' },
+];
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-dark-border bg-dark/80 backdrop-blur-lg supports-[backdrop-filter]:bg-dark/60">
+  <div class="container flex h-16 items-center justify-between">
+    <a class="flex items-center space-x-2" href="/">
+      <span class="font-light text-xl tracking-wide text-light">L'Élixir de Miin</span>
+    </a>
+    <nav class="flex items-center space-x-6 text-sm font-light">
+      {navItems.map((item) => (
+        <a class="transition-colors hover:text-primary" href={item.href}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+    <div class="flex items-center space-x-4">
+      <a
+        href="https://www.instagram.com/cosmiatra_sam/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-primary hover:text-light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+        </svg>
+      </a>
+      <a
+        href="https://facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-primary hover:text-light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header> 

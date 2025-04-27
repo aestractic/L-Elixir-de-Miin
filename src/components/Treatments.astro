@@ -1,0 +1,75 @@
+---
+const treatments = [
+  {
+    name: "Skin Analysis",
+    description: "Comprehensive skin analysis and personalized care plan.",
+    benefit: "Understand your skin's unique needs",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    name: "Hydration Therapy",
+    description: "Deep hydration to restore skin's moisture balance.",
+    benefit: "Plump and nourish dehydrated skin",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    name: "Gentle Exfoliation",
+    description: "Reveal healthier skin beneath with gentle exfoliation.",
+    benefit: "Improve skin texture and tone",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    name: "Antioxidant Infusion",
+    description: "Protect and repair skin with powerful antioxidants.",
+    benefit: "Combat free radicals and prevent premature aging",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    name: "Barrier Repair",
+    description: "Strengthen your skin's natural protective barrier.",
+    benefit: "Enhance skin resilience and health",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    name: "Custom Facial Therapy",
+    description: "Tailored treatment addressing your specific skin concerns.",
+    benefit: "Achieve optimal skin health and radiance",
+    image: "/placeholder.svg?height=300&width=400",
+  },
+];
+---
+
+<section id="treatments" class="w-full py-12 md:py-24 lg:py-32 bg-dark relative overflow-hidden">
+  <div class="absolute -bottom-[30%] left-[10%] w-[60%] h-[60%] rounded-full bg-gradient-to-tr from-primary/10 to-secondary/5 blur-[100px]"></div>
+  <div class="container px-4 md:px-6 relative z-10">
+    <h2 class="text-2xl font-light tracking-wider sm:text-3xl md:text-4xl mb-8 text-center text-light">
+      Our Elixirs
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {treatments.map((treatment) => (
+        <div class="bg-dark-lighter border-none shadow-lg backdrop-blur-sm bg-opacity-80 overflow-hidden">
+          <img
+            src={treatment.image}
+            alt={treatment.name}
+            width="400"
+            height="300"
+            class="w-full object-cover h-48"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-light mb-2 text-light">{treatment.name}</h3>
+            <p class="text-light-muted text-sm mb-2">{treatment.description}</p>
+            <p class="text-primary text-sm font-medium">Benefit: {treatment.benefit}</p>
+          </div>
+          <div class="p-4 pt-0">
+            <button
+              data-treatment={treatment.name}
+              class="w-full rounded-none border border-primary bg-transparent py-2 text-primary hover:bg-primary hover:text-dark transition-colors book-consultation"
+            >
+              Book Consultation
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section> 
