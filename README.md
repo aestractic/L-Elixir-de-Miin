@@ -1,106 +1,150 @@
 # L'Élixir de Miin
 
-A modern, elegant website for L'Élixir de Miin wellness services, built with Astro and TailwindCSS.
+**La esencia de la belleza** - Sitio web moderno y elegante para servicios de wellness y tratamientos estéticos faciales.
 
-## 🌟 Features
+## Características Principales
 
-- Responsive modern design with dark theme
-- Interactive appointment scheduling system
-- WhatsApp integration for direct communication
-- Spanish language support
-- Dynamic calendar component
-- Treatment services showcase
-- Philosophy and brand story section
+- **Diseño Responsive**: Perfectamente optimizado para móviles, tablets y desktop
+- **Tema Elegante**: Diseño minimalista con paleta de colores sofisticada
+- **Integración WhatsApp**: Mensajes personalizados para cada tratamiento
+- **Tratamientos Profesionales**: Showcase completo de 8 servicios especializados
+- **UI/UX Moderna**: Experiencia de usuario intuitiva y atractiva
+- **Tipografía Elegante**: Fuente Playfair Display para un look profesional
+- **Mobile-First**: Navegación táctil optimizada con menú hamburguesa
 
-## 🛠️ Tech Stack
+## Tratamientos Ofrecidos
 
-- [Astro](https://astro.build/) - Static Site Generator
-- [TailwindCSS](https://tailwindcss.com/) - Styling
-- [date-fns](https://date-fns.org/) - Date manipulation and formatting
-- Vanilla JavaScript for interactivity
+- **Microdermoabrasión** - Renovación profunda de la piel
+- **Skin Scrubber** - Limpieza ultrasónica de poros
+- **Alta Frecuencia** - Oxigenación y efecto bactericida
+- **Máscara LED** - Terapia de luz personalizada
+- **Ultrasonido Facial** - Estimulación de colágeno
+- **Dermapen** - Mejora de cicatrices e imperfecciones
+- **Hilos Absorbibles de Colágeno** - Reafirmación natural
+- **Hyaluron Pen** - Hidratación sin agujas
 
-## 🚀 Getting Started
+## Stack Tecnológico
 
-### Prerequisites
+- **[Astro](https://astro.build/)** - Framework web moderno y rápido
+- **[TailwindCSS](https://tailwindcss.com/)** - Styling utility-first
+- **[Bun](https://bun.sh/)** - Runtime y package manager ultra-rápido
+- **Vanilla JavaScript** - Interactividad nativa sin frameworks pesados
+- **Mobile-First Design** - Responsive design optimizado
 
-- [Bun](https://bun.sh/) package manager
-- Node.js 18 or higher
+## Inicio Rápido
 
-### Installation
+### Prerrequisitos
 
-1. Clone the repository:
-```bash
-git clone [your-repo-url]
-cd L-Elixir-de-Miin
+- [Bun](https://bun.sh/) (recomendado) o Node.js 18+
+- Git
+
+### Instalación
+
+1. **Clona el repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/L-Elixir-de-Miin.git
+   cd L-Elixir-de-Miin
+   ```
+
+2. **Instala dependencias**
+   ```bash
+   bun install
+   ```
+
+3. **Inicia el servidor de desarrollo**
+   ```bash
+   bun dev
+   ```
+
+4. **Abre tu navegador**
+   ```
+   http://localhost:4321
+   ```
+
+## Estructura del Proyecto
+
 ```
-
-2. Install dependencies:
-```bash
-bun install
-```
-
-3. Start the development server:
-```bash
-bun dev
-```
-
-The site will be available at `http://localhost:4321`
-
-## 📁 Project Structure
-
-```text
-/
-├── public/          # Static assets
+L-Elixir-de-Miin/
 ├── src/
-│   ├── components/  # UI components
-│   │   ├── Calendar.astro
-│   │   ├── Footer.astro
-│   │   ├── Header.astro
-│   │   ├── Hero.astro
-│   │   ├── Philosophy.astro
-│   │   ├── Schedule.astro
-│   │   └── Treatments.astro
-│   ├── layouts/     # Page layouts
-│   │   └── Layout.astro
-│   ├── pages/       # Route pages
-│   │   └── index.astro
-│   └── styles/      # Global styles
-│       └── global.css
-└── package.json
+│   ├── components/          # Componentes reutilizables
+│   │   ├── Header.astro     # Navegación principal con menú móvil
+│   │   ├── Hero.astro       # Sección principal de bienvenida
+│   │   ├── Philosophy.astro # Filosofía de la marca
+│   │   ├── Treatments.astro # Showcase de tratamientos
+│   │   ├── Schedule.astro   # Calendario y citas
+│   │   ├── Calendar.astro   # Componente de calendario
+│   │   └── Footer.astro     # Pie de página
+│   ├── layouts/
+│   │   └── Layout.astro     # Layout principal
+│   ├── pages/
+│   │   └── index.astro      # Página principal
+│   └── styles/
+│       └── global.css       # Estilos globales
+├── public/                  # Archivos estáticos
+├── astro.config.mjs        # Configuración de Astro
+├── tailwind.config.mjs     # Configuración de Tailwind
+└── package.json            # Dependencias y scripts
 ```
 
-## 🔧 Available Commands
+## Paleta de Colores
 
-| Command        | Action                                           |
-| :------------- | :----------------------------------------------- |
-| `bun install`  | Installs dependencies                            |
-| `bun dev`      | Starts local dev server at `localhost:4321`      |
-| `bun build`    | Build your production site to `./dist/`          |
-| `bun preview`  | Preview your build locally, before deploying     |
+```css
+/* Colores principales */
+--primary: #B18D7A;      /* Beige elegante */
+--secondary: #8A6D5F;    /* Marrón suave */
 
-## 🎨 Color Scheme
+/* Colores de fondo */
+--dark: #0A0A0B;         /* Negro profundo */
+--dark-lighter: #121214; /* Gris oscuro */
+--dark-border: #2A2A2A;  /* Borde sutil */
 
-- Primary: [Your primary color]
-- Dark Background: #0A0A0B
-- Light Text: #E8E8E8
-- Muted Text: [Your muted text color]
-- Border Dark: [Your border color]
+/* Colores de texto */
+--light: #E8E8E8;        /* Blanco suave */
+--light-muted: #A0A0A0;  /* Gris claro */
+```
 
-## 📱 WhatsApp Integration
+## Funcionalidades Móviles
 
-The website includes direct WhatsApp integration for appointment scheduling. The contact button connects to the business WhatsApp number with a pre-formatted message.
+- **Navegación hamburguesa** con animaciones suaves
+- **Botones táctiles** optimizados para dedos
+- **Grid responsivo** que se adapta automáticamente
+- **Tipografía escalable** por breakpoints
+- **WhatsApp integrado** con mensajes personalizados
 
-## 🌐 Deployment
+## Comandos Disponibles
 
-[Add your deployment instructions here]
+| Comando | Descripción |
+|---------|-------------|
+| `bun dev` | Servidor de desarrollo en `localhost:4321` |
+| `bun build` | Construye el sitio para producción |
+| `bun preview` | Previsualiza la build localmente |
+| `bun astro check` | Verifica errores de TypeScript |
 
-## 📄 License
+## Integración WhatsApp
 
-[Add your license information here]
+Cada tratamiento tiene un mensaje personalizado que se envía directamente al WhatsApp del negocio:
+- **Número**: +52 222 930 0680
+- **Mensajes específicos** para cada servicio
+- **Enlaces directos** que abren la app automáticamente
 
-## 👥 Contact
+## Despliegue
 
-[Add your contact information here]
+El proyecto está optimizado para desplegarse en:
+- **Vercel** (recomendado para Astro)
+- **Netlify**
+- **GitHub Pages**
+- **Cualquier hosting estático**
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+**L'Élixir de Miin**
+- Sitio Web: [En construcción]
+
+---
+
+*Desarrollado con amor usando Astro y TailwindCSS*
 
 ```sh
 bun create astro@latest -- --template basics
