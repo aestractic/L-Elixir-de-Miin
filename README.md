@@ -123,7 +123,6 @@ L-Elixir-de-Miin/
 ## Integración WhatsApp
 
 Cada tratamiento tiene un mensaje personalizado que se envía directamente al WhatsApp del negocio:
-- **Número**: +52 222 930 0680
 - **Mensajes específicos** para cada servicio
 - **Enlaces directos** que abren la app automáticamente
 
