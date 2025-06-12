@@ -1,39 +1,83 @@
 ---
 const treatments = [
   {
-    name: "Skin Analysis",
-    description: "Comprehensive skin analysis and personalized care plan.",
-    benefit: "Understand your skin's unique needs",
+    name: "Microdermoabrasión",
+    description: " La microdermoabrasión con punta de diamante es un tratamiento indoloro que elimina suavemente las células muertas de las capas superficiales de tu piel, revelando una tez más fresca y luminosa.",
+    benefits: [
+      "Piel con mejor textura y un tono más uniforme, para un aspecto más liso.",
+      "Adiós al exceso de brillo, logrando una eliminación de la capa superficial.",
+      "Reduce la apariencia de líneas finas y cicatrices de acné, disminuyendo las imperfecciones."
+    ],
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    name: "Hydration Therapy",
-    description: "Deep hydration to restore skin's moisture balance.",
-    benefit: "Plump and nourish dehydrated skin",
+    name: "Skin Scrubber",
+    description: "El skin scrubber utiliza vibraciones ultrasónicas para una exfoliación profunda, rápida y sencilla, limpiando tu piel desde el interior.",
+    benefits: [
+      "Elimina impurezas y desobstruye los poros haciendo una ligera exfoliación.",
+      "Retira puntos negros, mejorando la claridad del cutis.",
+      "Reduce el exceso de sebo en la piel, ayudando a controlar el brillo. "
+    ],
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    name: "Gentle Exfoliation",
-    description: "Reveal healthier skin beneath with gentle exfoliation.",
-    benefit: "Improve skin texture and tone",
+    name: "Alta Frecuencia",
+    description: "La alta frecuencia utiliza electrodos de vidrio para generar una suave sensación de calor que libera ozono, ayudando a revitalizar la piel y a calmarla.",
+    benefits: [
+      "Oxigena la piel, promoviendo su regeneración.",
+      "Posee un efecto bactericida, ayudando a combatir el acné.",
+      "Favorece la cicatrización, contribuyendo a una piel más uniforme."
+    ],
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    name: "Antioxidant Infusion",
-    description: "Protect and repair skin with powerful antioxidants.",
-    benefit: "Combat free radicals and prevent premature aging",
+    name: "Máscara De Led",
+    description: "La máscara LED utiliza luces de diferentes colores para actuar directamente sobre la piel, mejorando visiblemente su aspecto y tratando diversas afecciones de manera personalizada.",
+    benefits: [
+      "Disminuye visiblemente las manchas, unificando el tono de la piel.",
+      "Calma la piel irritada, proporcionando alivio y reduciendo el enrojecimiento.",
+      "Combate eficazmente el acné, ayudando a prevenir brotes y dando un efecto calmante."
+    ],
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    name: "Barrier Repair",
-    description: "Strengthen your skin's natural protective barrier.",
-    benefit: "Enhance skin resilience and health",
+    name: "Ultrasonido Facial",
+    description: "El ultrasonido facial es un tratamiento no invasivo que, a través de un cabezal, transmite ondas ultrasónicas de baja frecuencia y alta potencia. Este proceso nos ayudará a la producción de colágeno y elastina dejando una apariencia con efecto lifting.",
+    benefits: [
+      "Estimula la producción de colágeno, mejorando la elasticidad y firmeza de la piel.",
+      "Optimiza la oxigenación de la piel, dándole un aspecto más radiante y saludable.",
+      "Mejora la circulación sanguínea, favoreciendo la nutrición celular y la eliminación de toxinas."
+    ],
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    name: "Custom Facial Therapy",
-    description: "Tailored treatment addressing your specific skin concerns.",
-    benefit: "Achieve optimal skin health and radiance",
+    name: "Dermapen",
+    description: "El Dermapen es un innovador tratamiento que utiliza microagujas para crear microcanales controlados en la piel. Esto estimula la regeneración natural y permite corregir una amplia gama de imperfecciones tanto en el rostro como en diferentes zonas del cuerpo.",
+    benefits: [
+      "Disminuye la apariencia de estrías, ayudando a suavizar su textura.",
+      "Atenúa líneas finas de expresión, dando como resultado una apariencia uniforme",
+      "Mejora la textura de cicatrices e imperfecciones, promoviendo una piel más homogénea y saludable."
+    ],
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    name: "Hilos Absorbibles De Colágeno",
+    description: "Este es un tratamiento no invasivo que consiste en la inserción de hilos de sutura reabsorbibles biocompatibles en la piel. Estos hilos actúan como una guía, estimulando la producción natural de nuevas fibras de colágeno, lo que resulta en un efecto de soporte y una piel más firme y elástica con el tiempo.",
+    benefits: [
+      "Disminuye la apariencia de líneas finas de la piel, para un cutis más liso y rejuvenecido.",
+      "Favorece la formación de nuevas fibras de colágeno, restaurando la firmeza y elasticidad natural de la piel.",
+      "Mejora la calidad general de la piel, aportando un aspecto más vital y redensificado."
+    ],
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    name: "Hyaluron Pen",
+    description: "Esta es una innovadora pluma sin aguja que permite la aplicación de ácido hialurónico. Es ideal para quienes buscan mejorar el volumen y la hidratación de la piel de forma no invasiva, y funciona como un excelente complemento para potenciar los resultados de los hilos absorbibles de colágeno.",
+    benefits: [
+      "Crea un efecto lifting suave, mejorando la tensión y el contorno del rostro.",
+      "Reafirma la piel, aportando mayor densidad y elasticidad para un aspecto más terso.",
+      "Hidrata profundamente, mejorando la calidad y el aspecto general de la piel."
+    ],
     image: "/placeholder.svg?height=300&width=400",
   },
 ];
@@ -43,7 +87,7 @@ const treatments = [
   <div class="absolute -bottom-[30%] left-[10%] w-[60%] h-[60%] rounded-full bg-gradient-to-tr from-primary/10 to-secondary/5 blur-[100px]"></div>
   <div class="container px-4 md:px-6 relative z-10">
     <h2 class="text-2xl font-light tracking-wider sm:text-3xl md:text-4xl mb-8 text-center text-light">
-      Our Elixirs
+      Faciales
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {treatments.map((treatment) => (
@@ -56,16 +100,23 @@ const treatments = [
             class="w-full object-cover h-48"
           />
           <div class="p-4">
-            <h3 class="text-xl font-light mb-2 text-light">{treatment.name}</h3>
-            <p class="text-light-muted text-sm mb-2">{treatment.description}</p>
-            <p class="text-primary text-sm font-medium">Benefit: {treatment.benefit}</p>
+            <h3 class="text-xl font-serif font-medium mb-2 text-light tracking-wide">{treatment.name}</h3>
+            <p class="text-light-muted text-sm mb-3 font-light leading-relaxed">{treatment.description}</p>
+            <div class="mb-2">
+              <p class="text-primary text-sm font-medium italic mb-2">Beneficios:</p>
+              <ul class="text-primary text-sm list-disc list-inside space-y-1">
+                {treatment.benefits.map((benefit) => (
+                  <li class="font-light">{benefit}</li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div class="p-4 pt-0">
             <button
               data-treatment={treatment.name}
-              class="w-full rounded-none border border-primary bg-transparent py-2 text-primary hover:bg-primary hover:text-dark transition-colors book-consultation"
+              class="w-full rounded-none border border-primary bg-transparent py-2 text-primary hover:bg-primary hover:text-dark transition-colors book-consultation font-serif font-light"
             >
-              Book Consultation
+              Consulta de libro
             </button>
           </div>
         </div>
